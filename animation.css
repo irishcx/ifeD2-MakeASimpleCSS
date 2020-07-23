@@ -1,0 +1,86 @@
+html{
+    font-size:10px;
+    margin-left:45%;
+    font-family: 等线;
+
+}
+.normalD{
+   line-height: 10rem;
+}
+#line{
+    width:12rem;
+    height:5px;
+    
+    background-color: blue;
+}
+h1.before{
+    font-size:3rem;
+    animation: toBlack 0.5s ease-out;
+    animation-fill-mode: forwards;
+    /* background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%); */
+}
+@keyframes toBlack{
+    from{
+        color:blue;
+        /* -webkit-transform: scale(1); */
+    }
+    to{
+        /* -webkit-transform: scale(0.5); */
+        color:black;
+    }
+}
+
+h1.after{
+    font-size:3rem;
+    animation: toBlue 0.5s ease-out;
+    animation-fill-mode: forwards;
+    /* 这样就不会再跳回去 */
+}
+
+@keyframes toBlue{
+    from{
+        color:black;
+        /* -webkit-transform: scale(1); */
+    }
+    to{
+        /* -webkit-transform: scale(0.5); */
+        color:blue;
+    }}
+.afterL{
+        animation: smaller 0.5s ease-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes bigger{
+        from {
+            -webkit-transform: scaleX(1);
+        }
+        to{
+            -webkit-transform: scaleX(0);
+        }
+    }
+.beforeL{
+    animation: bigger 0.5s 1 ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes smaller{
+    from {
+        -webkit-transform: scaleX(0);
+    }
+    to{
+        -webkit-transform: scaleX(1);
+    }
+}
+
+button, button:visited, button:hover{
+    background-color: white;
+    font-size:2rem;
+    border-color: #dddddd;
+    border-radius: 5px;
+    padding:2px 15px;
+}
+
+button:active{
+    background-color:rgb(19, 19, 122);
+    color:rgb(19, 19, 122);
+    border-color:rgb(19, 19, 122);
+}
